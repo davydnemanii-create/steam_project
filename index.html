@@ -1,76 +1,122 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Steam Games</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Steam Games</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <div class="container">
 
     <div class="navbar">
+
         <div class="logo">
             <img src="steam-white-logo-hd-png-701751694706440swid9yuigf-removebg-preview.png">
         </div>
 
         <div class="menu">
-            <a href="#" class="nav-item">All time</a>
-            <a href="#" class="nav-item">Shooter</a>
-            <a href="#" class="nav-item">Horror</a>
-            <a href="#" class="nav-item">Casual</a>
-            <a href="#" class="nav-item">Fighting</a>
-            <a href="#" class="nav-item">Strategy</a>
-            <a href="#" class="nav-item">Survival</a>
-            <a href="#" class="nav-item">Racing</a>
+            <a href="https://store.steampowered.com/" class="nav-item">All time</a>
+            <a href="https://store.steampowered.com/category/action_fps?snr=1_12_71_" class="nav-item">Shooter</a>
+            <a href="https://store.steampowered.com/category/horror?snr=1_12_71_" class="nav-item">Horror</a>
+            <a href="https://store.steampowered.com/category/casual?snr=1_12_71_" class="nav-item">Casual</a>
+            <a href="https://store.steampowered.com/category/fighting_martial_arts?snr=1_12_71_" class="nav-item">Fighting</a>
+            <a href="https://store.steampowered.com/category/rpg_strategy_tactics?snr=1_12_71_" class="nav-item">Strategy</a>
+            <a href="https://store.steampowered.com/category/survival?snr=1_12_71_" class="nav-item">Survival</a>
+            <a href="https://store.steampowered.com/category/racing?snr=1_12_71_" class="nav-item">Racing</a>
         </div>
 
-        <!-- Переключатель языка -->
         <div class="lang-switcher">
             <button class="lang-btn active" data-lang="en">EN</button>
             <button class="lang-btn" data-lang="ua">UA</button>
         </div>
+
     </div>
+
 
     <div class="title" id="mainTitle">
         Lets see how popular are your favorite game now!
     </div>
 
+
     <div class="games">
-        <div class="game-card">
-            <img src="MV5BYWI3YzE2NTUtOGI3Yi00YjNlLWIxOTUtODhmMjBjYjkzOGQ4XkEyXkFqcGc@._V1_.jpg" alt="Dota 2">
-            <div class="game-title">Dota 2</div>
-        </div>
 
-        <div class="game-card">
-            <img src="f75dd04fa12445a8ec43be65fa16ff1b8d2bf82e.jpg" alt="Counter-Strike 2">
-            <div class="game-title">Counter-Strike 2</div>
-        </div>
+        <a href="https://store.steampowered.com/app/570/Dota_2/">
+            <div class="game-card">
+                <img src="images.jpg">
+                <div class="game-title">Dota 2</div>
+            </div>
+        </a>
 
-        <div class="game-card">
-            <img src="capsule_616x353.jpg" alt="Rust">
-            <div class="game-title">Rust</div>
-        </div>
+        <a href="https://store.steampowered.com/app/730/CounterStrike_2/">
+            <div class="game-card">
+                <img src="1696414021417.webp">
+                <div class="game-title">Counter-Strike 2</div>
+            </div>
+        </a>
 
-        <div class="game-card">
-            <img src="arc-raiders-hrxqv.jpg" alt="ARC Raiders">
-            <div class="game-title">ARC Raiders</div>
-        </div>
+        <a href="https://store.steampowered.com/app/252490/Rust/">
+            <div class="game-card">
+                <img src="capsule_616x353.jpg">
+                <div class="game-title">Rust</div>
+            </div>
+        </a>
+
+        <a href="https://store.steampowered.com/app/1808500/ARC_Raiders/">
+            <div class="game-card">
+                <img src="arc-raiders-hrxqv.jpg">
+                <div class="game-title">ARC Raiders</div>
+            </div>
+        </a>
+
     </div>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+    <div class="footer-left">
+
+        <div class="footer-title">Socials</div>
+
+        <div class="social-icons">
+            <a href="https://discord.com/channels/1480215434912600128/1480215436032217200"><img src="image.png"></a>
+            <a href="https://web.telegram.org/k/#-3881869295"><img src="завантаження.png"></a>
+            <a href="https://www.tiktok.com/@67pocoyo67okak"><img src="tiktok-icon2.png"></a>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+        <p>+380981103831</p>
+        <p>+380937870943</p>
+
+        <p>Card: 4441 1144 3363 9919</p>
+        <p>Card: 4874 0700 2105 1998</p>
+    </div>
+
+</footer>
 
 </div>
 
+
+
 <script>
+
 const translations = {
+
     en: {
         title: "Lets see how popular are your favorite game now!",
-        menu: ["All time", "Shooter", "Horror", "Casual", "Fighting", "Strategy", "Survival", "Racing"]
+        menu: ["All time","Shooter","Horror","Casual","Fighting","Strategy","Survival","Racing"]
     },
 
     ua: {
         title: "Давай подивимось, наскільки популярні твої улюблені ігри!",
-        menu: ["За весь час", "Шутери", "Горор", "Казуальні", "Файтинги", "Стратегії", "Виживання", "Перегони"]
+        menu: ["За весь час","Шутери","Горор","Казуальні","Файтинги","Стратегії","Виживання","Перегони"]
     }
+
 };
 
 const title = document.getElementById("mainTitle");
@@ -78,19 +124,24 @@ const menuItems = document.querySelectorAll(".nav-item");
 const buttons = document.querySelectorAll(".lang-btn");
 
 buttons.forEach(btn => {
+
     btn.addEventListener("click", () => {
+
         const lang = btn.dataset.lang;
 
         title.textContent = translations[lang].title;
 
-        menuItems.forEach((item, index) => {
+        menuItems.forEach((item,index)=>{
             item.textContent = translations[lang].menu[index];
         });
 
         buttons.forEach(b => b.classList.remove("active"));
         btn.classList.add("active");
+
     });
+
 });
+
 </script>
 
 </body>
