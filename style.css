@@ -1,7 +1,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:#1e1e1e;
+background:#ffffff;
 color:white;
 display:flex;
 justify-content:center;
@@ -112,7 +112,7 @@ font-weight:bold;
 }
 
 .lang-btn.active{
-background:#608ea8;
+background:#83aec7;
 color:white;
 }
 
